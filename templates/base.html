@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+	<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+	<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Bala Balaprasad bala balaprasad BalaPrsad borade Borade python django parbhani automation web development api"	/>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		  <script src="{% static 'js/jquery.min.js' %}"></script>
+		<!--end slider -->
+		<!--script-->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!---->
+
+</head>
+<body>
+<!---strat-banner---->
+<div class="banner">
+	 <div class="header">
+		  <div class="container">
+			  <div class="logo">
+					<a href="/"> <img src="{% static 'images/balap.png' %}" title="Pythonic Bala" /></a>
+			 </div>
+			 <!---start-top-nav---->
+			 <div class="top-menu">
+				  <span class="menu"> </span>
+				   <ul>
+						<li class="active"><a href="/">HOME</a></li>
+						<li><a href="/contact">CONTACT</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<div class="clearfix"> </div>
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+					<script>
+					$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+					});
+					</script>
+				<!---//End-top-nav---->
+		 </div>
+	 </div>
+
+</div>
+<!---//End-banner---->
+{% block content %}{% endblock %}
+<!--footer-->
+<div class="footer">
+	 <div class="container">
+		 <div class="col-md-4 footer-info">
+			 <h3>BalaPrasad Borade</h3>
+			 <p>Python Guy, Expert in Web Develpment & Automation, Automation Testing of Web Sites and API's. </p>
+			 <p></p>
+		 </div>
+		 <div class="col-md-4 footer-list">
+			 <h3>Orgnizations Working and Worked So Far</h3>
+			 <ul>
+			 <li><a href="http://www.aurusinc.com">AURUSTECH</a></li>
+			 <li><a href="http://www.ambersoft.in">AMBERSOFT</a></li>
+			 <li><a href="http://www.gktcs.com">GKTCS</a></li>
+			 </ul>
+		 </div>
+		 <div class="col-md-4 footer-media">
+				<h3>FOLLOW US ON....</h3>
+				 <div class="social-icons">
+				 <a href="https://fb.com/BalaPrasadMB"><span class="fb"> </span></a>
+				 <a href="https://twitter.com/boradebala"><span class="twt"> </span></a>
+				 <a href="https://in.linkedin.com/in/balaprasad-borade-4268a044"><span class="in"> </span></a>
+			    </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---footer/-->
+<div class="copywrite">
+	 <div class="container">
+	 <p>Copyrights &copy; 2017 Blogging All rights reserved</p>
+</div>
+</div>
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>

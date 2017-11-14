@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact-Us{% endblock %}
+{% block content %}
+<div class="contact">
+	 <div class="container">
+		 <div class="contact-head">
+			 <h3>CONTACT</h3>
+			  <form>
+				  <div class="col-md-6 contact-left">
+						<input type="text" placeholder="Name" required/>
+						<input type="text" placeholder="E-mail" required/>
+						<input type="text" placeholder="Phone" required/>
+				 </div>
+				 <div class="col-md-6 contact-right">
+						 <textarea placeholder="Message"></textarea>
+						 <input type="submit" value="SEND"/>
+				 </div>
+				 <div class="clearfix"></div>
+			 </form>
+		 </div>
+		 <div class="address">
+			 <h3>Our Locations</h3>
+			 <div class="col-md-6 locations">
+				  <ul>
+					 <li><span></span></li>
+					 <li>
+						 <div class="address-info">
+							 <h4>Pune, Maharashtra, India,</h4>
+							 <p>Pune Soalapur Road,</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:balaprasadmborade@gmail.com">balaprasadmborade@gmail.com</a></p>
+							 <h5><a href="https://www.google.com/maps/embed/v1/place?key=AIzaSyD69Xu9y7mqO4FhkFw8-r0TOBNHrhBWZ4U&q=Pune, Maharashtra">Visit on Google Maps>></a></h5>
+						 </div>
+					 </li>
+				  </ul>
+			 </div>
+			 <div class="col-md-6 locations">
+				  <ul>
+					 <li><span></span></li>
+					 <li>
+						 <div class="address-info">
+							 <h4>Parbhani, Maharashtra, India</h4>
+							 <p>New Mondha Road, Parbhani</p>
+							 <p>Phone: 123 456 7890</p>
+							 <p>Mail: <a href="mailto:balaprasadmborade@gmail.com">balaprasadmborade@gmail.com</a></p>
+							 <h5><a href="https://www.google.com/maps/embed/v1/place?key=AIzaSyD69Xu9y7mqO4FhkFw8-r0TOBNHrhBWZ4U&q=Parbhani, Maharashtra">Visit on Google Maps>></a></h5>
+						 </div>
+					 </li>
+				  </ul>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+{% endblock %}
