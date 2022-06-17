@@ -3,4 +3,8 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-# Register your models here.
+from bala.models import ContactDetails, Articles, Comments
+
+admin.site.register(ContactDetails)
+admin.site.register(Articles)
+admin.site.register(Comments)

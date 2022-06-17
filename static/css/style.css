@@ -403,7 +403,24 @@ font-size: 2em;
 margin-bottom: 1em;
 font-family: 'Oswald', sans-serif;
 }
-.contact form input[type="text"],.contact-right textarea {
+.contact form input[type="text"], textarea {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid #87655B;
+font-size: 1.2em;
+margin-bottom: 1.5em;
+color: #87655B;
+background:#EFEAD8;
+font-family: 'Source Sans Pro', sans-serif;
+outline: none;
+font-weight: 400;
+transition: 0.5s all ease;
+-webkit-transition: 0.5s all ease;
+-moz-transition: 0.5s all ease;
+-o-transition: 0.5s all ease;
+-ms-transition: 0.5s all ease;
+}
+.contact form input[type="email"], textarea {
 width: 100%;
 padding: 10px 12px;
 border: 1px solid #87655B;

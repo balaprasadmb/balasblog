@@ -6,17 +6,15 @@
 	 <div class="container">
 		 <div class="contact-head">
 			 <h3>CONTACT</h3>
-			  <form>
-				  <div class="col-md-6 contact-left">
-						<input type="text" placeholder="Name" required/>
-						<input type="text" placeholder="E-mail" required/>
-						<input type="text" placeholder="Phone" required/>
-				 </div>
-				 <div class="col-md-6 contact-right">
-						 <textarea placeholder="Message"></textarea>
-						 <input type="submit" value="SEND"/>
-				 </div>
-				 <div class="clearfix"></div>
+			 {{message}}
+			  <form action="/contact/" method="post">
+			      {% csrf_token %}
+			      {% for field in form%}
+				  <div class="col-md-6 contact-left">{{field}}</div>
+                  <div class="col-md-6 contact-right">{{field.errors}}</div>
+				  <div class="clearfix"></div>
+				  {% endfor %}
+                  <input type="submit" value="SEND"/>
 			 </form>
 		 </div>
 		 <div class="address">
